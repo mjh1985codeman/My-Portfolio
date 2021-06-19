@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--primary-color);
 }
 
 /* Header Styling Begins */
@@ -16,19 +17,27 @@
     color: var(--secondary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
+    display: flex;
+    width: max-content;
 }
 
 .header h1 {
     font-size: x-large;
-    border-bottom: var(--border-color);
+    border: 3px;
+    border-style: solid;
+    border-color: var(--border-color);
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
 /* Header Styling Ends */
 
 /* Navigation Styling Begins */
 
+.navigation {
+    border: 3px;
+    border-style: solid;
+    border-color: var(--border-color);
+}
 .navigation ul {
     margin: 20px 0;
     z-index: 9999;
@@ -37,12 +46,14 @@
 .navigation ul li {
     border: 3px;
     border-style: solid;
-    border-color: rgba(13,69,154,0.4);
+    border-color: var(--primary-color);
+    display: inline;
 }
 
 .navigation ul li a {
     color: #B22222;
-    
+    font-weight: bolder;
+    font-size: larger;
 }
 /* Navigation Styling Ends */
 
@@ -57,7 +68,7 @@
 /* About Me Section Styling Begins */
 
 .about-me {
-
+    background-color: var(--primary-color);
 }
 
 /* About Me Section Styling Ends */
