@@ -1,7 +1,7 @@
 :root {
-    --primary-color:#E0FFFF;
+    --primary-color:#B0C4DE;
     --secondary-color:#B22222;
-    --border-color:#A9A9A9;
+    --border-color:#000080;
 }
 
 * {
@@ -10,13 +10,13 @@
     box-sizing: border-box;
 }
 
-
 /* Header Styling Begins */
 
 .header {
     color: var(--secondary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+    border-style: solid;
 }
 
 .header h1 {
@@ -31,14 +31,16 @@
 /* Navigation Styling Begins */
 
 .navigation {
-    background-color: var(--primary-color);
+    float: right;
+    margin: 5px 0;
+    z-index: 9999;
 }
 
 .navigation li {
-    border-style: solid;
-    border-color: var(--border-color);
     display: inline;
-    
+    border: 3px;
+    border-style: solid;
+    border-color: rgba(13,69,154,0.4);
 }
 
 .navigation li a {
@@ -59,7 +61,7 @@
 /* About Me Section Styling Begins */
 
 .about-me {
-    color: blue;
+
 }
 
 /* About Me Section Styling Ends */
@@ -68,6 +70,10 @@
 
 .my-work {
     color: green;
+}
+
+.my-work img {
+    border: 2px solid #000;
 }
 
 /* My Work Section Styling Ends */
