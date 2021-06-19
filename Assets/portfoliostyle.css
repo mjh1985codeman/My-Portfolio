@@ -10,3 +10,80 @@
     box-sizing: border-box;
 }
 
+
+/* Header Styling Begins */
+
+.header {
+    color: var(--secondary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.header h1 {
+    font-size: x-large;
+    border-bottom: var(--border-color);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Header Styling Ends */
+
+/* Navigation Styling Begins */
+
+.navigation {
+    background-color: var(--primary-color);
+}
+
+.navigation li {
+    border-style: solid;
+    border-color: var(--border-color);
+    display: inline;
+    
+}
+
+.navigation li a {
+    color: #B22222;
+    text-align: justify;
+    align-content: stretch;
+}
+/* Navigation Styling Ends */
+
+/* SubHeader Styling Begins */
+
+.SubHeader {
+    color: var(--secondary-color);
+}
+
+/* SubHeader Styling Ends */
+
+/* About Me Section Styling Begins */
+
+.about-me {
+    color: blue;
+}
+
+/* About Me Section Styling Ends */
+
+/*My Work Section Styling Begins */
+
+.my-work {
+    color: green;
+}
+
+/* My Work Section Styling Ends */
+
+/* Contact Me Section Styling Begins */
+
+.contact-info {
+    color: pink;
+}
+
+/* Contact Me Section Styling Ends */
+
+/* Resume Section Styling Begins */
+
+.resume {
+    color: grey;
+}
+
+/* Resume Section Styling Ends */
