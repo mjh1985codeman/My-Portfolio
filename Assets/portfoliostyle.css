@@ -15,8 +15,7 @@
 .header {
     color: var(--secondary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    border-style: solid;
+    font-weight: bolder;
 }
 
 .header h1 {
@@ -30,23 +29,20 @@
 
 /* Navigation Styling Begins */
 
-.navigation {
-    float: right;
-    margin: 5px 0;
+.navigation ul {
+    margin: 20px 0;
     z-index: 9999;
 }
 
-.navigation li {
-    display: inline;
+.navigation ul li {
     border: 3px;
     border-style: solid;
     border-color: rgba(13,69,154,0.4);
 }
 
-.navigation li a {
+.navigation ul li a {
     color: #B22222;
-    text-align: justify;
-    align-content: stretch;
+    
 }
 /* Navigation Styling Ends */
 
