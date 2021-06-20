@@ -22,21 +22,20 @@
     font-size: 36px;
 }
 
-.navigation {
-    border-bottom: #B22222;
-}
-
-.navigation ul li a {
+.header nav {
     color: #B22222;
     font-weight: bolder;
     font-size: 24px;
     cursor: pointer;
-    padding: 20px 10px 20px 2px;
-    justify-content: flex-end;
 }
 
-.navigation ul li a:hover {
-    color: beige;
+.header nav ul li{
+    display: inline;
+    margin: 5px 10px 5px 10px;
+}
+
+.header nav ul li:hover {
+    font-weight: lighter;
 }
 /* Header & Navigation Styling Ends */
 
@@ -44,6 +43,11 @@
 
 .SubHeader {
     color: var(--secondary-color);
+    text-align: center;
+}
+
+.SubHeader img {
+    
 }
 
 /* SubHeader Styling Ends */
@@ -52,6 +56,7 @@
 
 .about-me {
     background-color: var(--primary-color);
+    text-align: center;
 }
 
 /* About Me Section Styling Ends */
@@ -60,6 +65,7 @@
 
 .my-work {
     color: green;
+    text-align: center;
 }
 
 .my-work img {
