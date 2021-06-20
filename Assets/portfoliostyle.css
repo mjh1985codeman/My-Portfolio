@@ -1,61 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Montserrat:wght@300&display=swap');
+
 :root {
     --primary-color:#B0C4DE;
     --secondary-color:#B22222;
-    --border-color:#000080;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--primary-color);
 }
 
-/* Header Styling Begins */
+/* Header & Navigation Styling Begins */
 
 .header {
+    font-family: "Montserrat", sans-serif;
     color: var(--secondary-color);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    display: flex;
-    width: max-content;
 }
 
 .header h1 {
-    font-size: x-large;
-    border: 3px;
-    border-style: solid;
-    border-color: var(--border-color);
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
 }
-
-/* Header Styling Ends */
-
-/* Navigation Styling Begins */
 
 .navigation {
-    border: 3px;
-    border-style: solid;
-    border-color: var(--border-color);
-}
-.navigation ul {
-    margin: 20px 0;
-    z-index: 9999;
-}
-
-.navigation ul li {
-    border: 3px;
-    border-style: solid;
-    border-color: var(--primary-color);
-    display: inline;
+    border-bottom: #B22222;
 }
 
 .navigation ul li a {
     color: #B22222;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 20px 10px 20px 2px;
+    justify-content: flex-end;
 }
-/* Navigation Styling Ends */
+
+.navigation ul li a:hover {
+    color: beige;
+}
+/* Header & Navigation Styling Ends */
 
 /* SubHeader Styling Begins */
 
