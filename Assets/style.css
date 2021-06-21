@@ -3,6 +3,7 @@
 :root {
     --primary-color:#B0C4DE;
     --secondary-color:#B22222;
+    --border: 2px solid rgba(23, 24, 71,0.8);
 }
 
 * {
@@ -13,14 +14,28 @@
     background-color: var(--primary-color);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header & Navigation Styling Begins */
 
-.header {
+header {
     color: var(--secondary-color);
 }
 
-.header h1 {
+#header h1 {
     font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100px;
+    width: 80px;
 }
 
 .header nav {
@@ -31,8 +46,8 @@
 }
 
 .header nav ul li{
-    display: inline;
-    margin: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: right;
 }
 
 .header a {
@@ -51,11 +66,6 @@
     text-align: center;
 }
 
-.SubHeader img {
-    height: 30px;
-    width: 400px;
-}
-
 /* SubHeader Styling Ends */
 
 /* About Me Section Styling Begins */
@@ -65,13 +75,13 @@
 }
 
 .about-me h3 {
-    border: 2px solid black;
+    border: var(--border);
 }
 
 .about-me img {
     height: 190px;
     opacity: 0.8;
-    border: #000 2px;
+    border: var(--border);
     border-style: solid;
 }
 
@@ -87,11 +97,11 @@
 
 .my-work h3 {
     text-align: left;
-    border: 2px solid black;
+    border: var(--border);
 }
 
 .my-work img {
-    border: 2px solid #000;
+    border: var(--border);
 }
 
 .my-work img:hover {
@@ -107,7 +117,7 @@
 }
 
 .contact-info h3 {
-    border: 2px solid black;
+    border: var(--border);
 }
 
 /* Contact Me Section Styling Ends */
