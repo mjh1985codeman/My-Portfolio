@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&family=Montserrat:wght@300&display=swap');
 
 :root {
-    --primary-color:#B0C4DE;
-    --secondary-color:#B22222;
-    --border: 2px solid rgba(23, 24, 71,0.8);
+    --primary-color:hsl(2, 40%, 51%);
+    --secondary-color: black;
+    --border: 2px solid hsl(2, 5%, 51%);
 }
 
 * {
@@ -11,7 +11,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background-color: var(--primary-color);
 }
 
 html {
@@ -22,41 +21,52 @@ html {
 
 header {
     color: var(--secondary-color);
+    background-color: hsla(2, 38%, 51%);
 }
 
-#header h1 {
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+nav a {
+    font: "Montserrat";
+    font-size: 24px;
+}
+
+nav li:hover {
+    opacity: 0.8;
+    font-weight: bolder;
+}
+
+header h1 {
     font-size: 36px;
     display: flex;
     justify-content: center;
 }
 
-.header img {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100px;
-    width: 80px;
-}
-
-.header nav {
-    color: #B22222;
-    font-weight: bolder;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.header nav ul li{
-    display: flex;
-    justify-content: right;
-}
-
 .header a {
-    color: grey;
+    color: var(--secondary-color);
 }
 
-.header nav ul li:hover {
-    font-weight: lighter;
-}
 /* Header & Navigation Styling Ends */
 
 /* SubHeader Styling Begins */
@@ -122,10 +132,6 @@ header {
 
 /* Contact Me Section Styling Ends */
 
-/* Resume Section Styling Begins */
+/* Footer Styling Begins */
 
-.resume {
-    color: black;
-}
-
-/* Resume Section Styling Ends */
+/* Footer Styling Ends */
