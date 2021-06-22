@@ -43,7 +43,6 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 40px;
-    padding-top: 25px;
     padding-right: 25px;
 }
 
@@ -59,15 +58,33 @@ nav li:hover {
 
 header h1 {
     font-size: 36px;
-    display: flex;
-    justify-content: center;
+    padding-top: 2px;
+    padding-right: 650px;
+    padding-bottom: 2px;
 }
 
-.header a {
+header a {
     color: var(--secondary-color);
 }
 
+h1 img {
+    height: 100px;
+    width: 90px; 
+    border: var(--border);
+    border-radius: 10%;
+    opacity: 0.9;
+    float: left;
+}
+
 /* Header & Navigation Styling Ends */
+
+/*SideBar Styling Begins*/
+
+.sidebar {
+    border: var(--border);
+}
+
+/*SideBar Styling Ends*/
 
 /* SubHeader Styling Begins */
 
@@ -88,13 +105,6 @@ header h1 {
     border: var(--border);
 }
 
-.about-me img {
-    height: 190px;
-    opacity: 0.8;
-    border: var(--border);
-    border-style: solid;
-}
-
 /* About Me Section Styling Ends */
 
 /*My Work Section Styling Begins */
@@ -112,6 +122,8 @@ header h1 {
 
 .my-work img {
     border: var(--border);
+    width: 450px;
+    height: 200px;
 }
 
 .my-work img:hover {
@@ -133,5 +145,9 @@ header h1 {
 /* Contact Me Section Styling Ends */
 
 /* Footer Styling Begins */
+
+footer {
+    margin-bottom: 0;
+}
 
 /* Footer Styling Ends */
