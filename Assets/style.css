@@ -41,20 +41,16 @@ header h1 {
 }
 
 nav {
-    border: var(--border);
-    float: right;
-}
-
-nav ul {
-    list-style: none;
     display: flex;
-    flex-direction: row;
-    font: "Montserrat";
-    font-size: 24px;
+    justify-content: right;
+    margin-left: 100px;
 }
 
 nav li {
-    padding: 20px;
+    padding: 5px;
+    list-style: none;
+    font-size: 24px;
+    display: inline;
 }
 
 
