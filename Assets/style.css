@@ -17,7 +17,6 @@ body {
     display: flex;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    padding: 1%;
     flex-direction: column;
     background-color: antiquewhite;
 }
@@ -31,7 +30,6 @@ html {
 header {
     color: var(--secondary-color);
     background-color: hsla(2, 38%, 51%);
-    border: var(--border);
     align-items: center;
     padding: 1%;
 }
@@ -49,13 +47,22 @@ header h1 {
     margin-left: 10px;
 }
 
+.header-left {
+    display: flex;
+    align-items: center;
+}
 
-nav li {
-    list-style: none;
-    font-size: 24px;
+.header-right {
     display: flex;
     display: inline;
-    justify-content: right;
+}
+
+.header-right nav ul li {
+    list-style: none;
+    font-size: 24px;
+    display: inline;
+    float: right;
+    margin: 2%;
 }
 
 
