@@ -112,12 +112,16 @@ h1 img {
 
 /* About Me Section Styling Begins */
 
-.about-me {
+.port-section {
     text-align: left;
 }
 
-.about-me h3 {
+.port-section h3 {
     border: var(--border);
+    text-align: center;
+    padding: 15px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* About Me Section Styling Ends */
