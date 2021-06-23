@@ -12,6 +12,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    box-sizing: border-box;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 1%;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,8 +31,9 @@ html {
 header {
     color: var(--secondary-color);
     background-color: hsla(2, 38%, 51%);
-    display: flex;
+    border: var(--border);
     align-items: center;
+    padding: 1%;
 }
 
 #port-pic {
@@ -36,21 +47,15 @@ header {
 
 header h1 {
     margin-left: 10px;
-    border-bottom-style: solid;
-    border-color: black;
 }
 
-nav {
-    display: flex;
-    justify-content: right;
-    margin-left: 100px;
-}
 
 nav li {
-    padding: 5px;
     list-style: none;
     font-size: 24px;
+    display: flex;
     display: inline;
+    justify-content: right;
 }
 
 
@@ -72,8 +77,6 @@ header img {
     border: var(--border);
     border-radius: 10%;
     opacity: 0.9;
-    display: flex;
-    justify-content: left;
 }
 
 /* Header & Navigation Styling Ends */
@@ -99,6 +102,10 @@ header img {
     padding: 15px;
     font-size: xx-large;
     font-weight: bold;
+}
+
+.port-section li {
+    list-style: none;
 }
 
 /* About Me Section Styling Ends */
