@@ -9,7 +9,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -23,48 +22,41 @@ header {
     color: var(--secondary-color);
     background-color: hsla(2, 38%, 51%);
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 #port-pic {
     border-radius: 8px;
-    /* height: 10%; */
     width: 5%;
-    padding: 4px;
+    height: auto;
+    padding: 2px;
     margin-left: 10px;
+    border: var(--border);
 }
 
 header h1 {
     margin-left: 10px;
+    border-bottom-style: solid;
+    border-color: black;
 }
 
-/* header::after {
-    content: '';
-    display: table;
-    clear: both;
-} */
-
 nav {
+    border: var(--border);
     float: right;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 40px;
-    padding-right: 25px;
-}
-
-nav a {
+    display: flex;
+    flex-direction: row;
     font: "Montserrat";
     font-size: 24px;
 }
+
+nav li {
+    padding: 20px;
+}
+
 
 nav li:hover {
     opacity: 0.8;
@@ -73,33 +65,22 @@ nav li:hover {
 
 header h1 {
     font-size: 36px;
-    padding-top: 2px;
-    padding-right: 650px;
-    padding-bottom: 2px;
 }
 
 header a {
     color: var(--secondary-color);
 }
 
-h1 img {
+header img {
     height: 100px;
-    width: 90px; 
     border: var(--border);
     border-radius: 10%;
     opacity: 0.9;
-    float: left;
+    display: flex;
+    justify-content: left;
 }
 
 /* Header & Navigation Styling Ends */
-
-/*SideBar Styling Begins*/
-
-.sidebar {
-    border: var(--border);
-}
-
-/*SideBar Styling Ends*/
 
 /* SubHeader Styling Begins */
 
@@ -128,45 +109,4 @@ h1 img {
 
 /*My Work Section Styling Begins */
 
-.my-work {
-    color:black;
-    text-align: center;
-    font-weight: bold;
-}
 
-.my-work h3 {
-    text-align: left;
-    border: var(--border);
-}
-
-.my-work img {
-    border: var(--border);
-    width: 450px;
-    height: 200px;
-}
-
-.my-work img:hover {
-    opacity: 0.8;
-}
-
-/* My Work Section Styling Ends */
-
-/* Contact Me Section Styling Begins */
-
-.contact-info {
-    color:black;
-}
-
-.contact-info h3 {
-    border: var(--border);
-}
-
-/* Contact Me Section Styling Ends */
-
-/* Footer Styling Begins */
-
-footer {
-    margin-bottom: 0;
-}
-
-/* Footer Styling Ends */
