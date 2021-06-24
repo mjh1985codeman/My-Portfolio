@@ -1,122 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Benne&family=Montserrat:wght@300&display=swap');
-
-:root {
-    --primary-color:hsl(2, 40%, 51%);
-    --secondary-color: black;
-    --border: 2px solid hsl(2, 5%, 51%);
-}
-
+/*Removed Browser Default Stylings*/
 * {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
+
+/* Universal Stylings */
 
 body {
-    box-sizing: border-box;
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: antiquewhite;
+    color: darkslategray;
+    display: flex;
+    flex-direction: column;
 }
 
-html {
-    scroll-behavior: smooth;
+h2 {
+    padding-left: 20px;
+    font-style: italic;
 }
 
-/* Header & Navigation Styling Begins */
+h3 {
+    font-size: 16px;
+    font-style: italic;
+    display: inline;
+}
+
+/* Header Stylings */
 
 header {
-    color: var(--secondary-color);
-    background-color: hsla(2, 38%, 51%);
-    align-items: center;
-    padding: 1%;
-}
-
-#port-pic {
-    border-radius: 8px;
-    width: 5%;
-    height: auto;
-    padding: 2px;
-    margin-left: 10px;
-    border: var(--border);
-}
-
-header h1 {
-    margin-left: 10px;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
-.header-right {
-    display: flex;
-    display: inline;
-}
-
-.header-right nav ul li {
-    list-style: none;
-    font-size: 24px;
-    display: inline;
-    float: right;
-    margin: 2%;
-}
-
-
-nav li:hover {
-    opacity: 0.8;
-    font-weight: bolder;
-}
-
-header h1 {
-    font-size: 36px;
-}
-
-header a {
-    color: var(--secondary-color);
+    padding: 20px 35px;
+    background-color: rgb(127, 139, 153);
 }
 
 header img {
-    height: 100px;
-    border: var(--border);
-    border-radius: 10%;
-    opacity: 0.9;
+    width: 80px;
+    height: auto;
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-/* Header & Navigation Styling Ends */
-
-/* SubHeader Styling Begins */
-
-.SubHeader {
-    color: var(--secondary-color);
-    text-align: center;
-}
-
-/* SubHeader Styling Ends */
-
-/* About Me Section Styling Begins */
-
-.port-section {
-    text-align: left;
-}
-
-.port-section h3 {
-    border: var(--border);
-    text-align: center;
-    padding: 15px;
-    font-size: xx-large;
+header h1 {
     font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: inline;
+    color:hsl(240, 26%, 87%);
 }
 
-.port-section li {
-    list-style: none;
+header a {
+    color: hsl(240, 26%, 87%);
+    text-decoration: none;
 }
 
-/* About Me Section Styling Ends */
+header li {
+    list-style-type: none;
+}
 
-/*My Work Section Styling Begins */
+header nav {
+    float: right;
+    margin: 7px 0;
+}
 
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 25px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+header nav ul li a:hover  {
+    opacity: 0.5;
+    border-bottom: 2px dotted white;
+}
+
+/* Section Stylings */
+
+section {
+    padding: 50px; /* Puts some spacing between the section elements */
+}
+
+/* About Me Section Styling */
+
+.about p {
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+}
+
+/*My Work Section Styling */
+
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styling */
+
+footer h2 {
+    display: inline;
+    color: darkkhaki;
+    font-style: italic;
+    border-top: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+footer div {
+    float: right;
+    padding-right: 10px;
+}
 
