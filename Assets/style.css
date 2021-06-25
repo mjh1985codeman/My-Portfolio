@@ -11,6 +11,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: antiquewhite;
     color: darkslategray;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
@@ -18,23 +19,30 @@ body {
 h2 {
     padding-left: 20px;
     font-style: italic;
+    margin: 20px;
+    font-size: 30px;
+    border-bottom: gray 1px solid;
 }
 
 h3 {
     font-size: 16px;
     font-style: italic;
-    display: inline;
 }
 
 /* Header Stylings */
 
 header {
-    padding: 20px 35px;
+    padding: 1%;
     background-color: rgb(127, 139, 153);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 
 header img {
-    width: 80px;
+    width: 90px;
     height: auto;
     float: left;
     border: 1px solid black;
@@ -44,8 +52,8 @@ header img {
 header h1 {
     font-weight: bold;
     font-size: 40px;
-    margin: 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    margin: 5px;
+    padding-right: 20px;
     border-radius: 10px;
     display: inline;
     color:hsl(240, 26%, 87%);
@@ -56,64 +64,150 @@ header a {
     text-decoration: none;
 }
 
-header li {
-    list-style-type: none;
+/* navigation stylings */
+
+nav {
+    margin-left: auto;
 }
 
-header nav {
-    float: right;
-    margin: 7px 0;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-header nav ul li {
+nav li {
     display: inline;
+    padding: 10px;
 }
 
-header nav ul li a {
+nav a {
+    font-size: 26px;
     margin: 0 25px;
-    font-weight: lighter;
-    font-size: 22px;
 }
 
-header nav ul li a:hover  {
+nav ul li a:hover  {
     opacity: 0.5;
     border-bottom: 2px dotted white;
-}
-
-/* Section Stylings */
-
-section {
-    padding: 50px; /* Puts some spacing between the section elements */
-}
+} 
 
 /* About Me Section Styling */
 
-.about p {
+.about {
     display: flex;
-    font-size: large;
     flex-direction: column;
+}
+
+.about h2 {
+    margin: 20px;
+    font-size: 30px;
+    border-bottom: gray 1px solid;
+}
+
+.about p {
+    font-size: 20px;
+    text-justify: center;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+    margin-left: 125px;
+    padding-right: 10px;
 }
 
 /*My Work Section Styling */
 
 .work {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.work h3 {
+    padding-left: 20px;
+}
+
+/* Image Behavior */
+
+.work img:hover{
+    opacity: 0.7;    
+}
+
+/* First Application Styling */
+
+#app-one-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#app-one-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remaining Application Stylings */
+
+.cards {
+    display: flex;
+    display: inline;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cards img {
+    max-width: 60%;
+    height: auto;
+    flex: 1 0 50%;
+    position: relative;
+}
+
+.other-projects {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+/* Contact Info Section */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contact p, a {
+    font-size: 26px;
+}
+
+.contact a {
+    color: green;
+}
+
+.contact a:active {
+    color: red;
 }
 
 /* Footer Styling */
 
-footer h2 {
-    display: inline;
-    color: darkkhaki;
-    font-style: italic;
-    border-top: 2px solid rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    font-size: 18px;
+footer {
+    padding: 10px;
 }
 
 footer div {
-    float: right;
-    padding-right: 10px;
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    border: black 1px solid;
+    justify-content: space-around;
 }
 
+footer p {
+    display: inline;
+    color: darkkhaki;
+    font-style: italic;
+    border-radius: 10px;
+    font-size: 18px;
+}
