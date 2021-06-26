@@ -168,6 +168,7 @@ nav ul li a:hover  {
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
+
 }
 
 /* Contact Info Section */
@@ -210,4 +211,74 @@ footer p {
     font-style: italic;
     border-radius: 10px;
     font-size: 18px;
+}
+
+/* Media Queries Styling for Larger Screens */
+
+@media screen and (min-width: 1798px) {
+    .work {
+        max-width: 1798px;
+    }
+}
+    
+/* Media Queries Styling for Smaller Screens */
+
+@media screen and (max-width: 980px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Styling for Tablets and Smaller */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Styling Mobile Phones and Smaller */
+
+@media screen and (max-width: 575px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        font-size: 12x;
+        margin: 0;
+    }
+}
+
+/* Styling iPhone Screens */
+
+@media screen and (max-width: 376px) {
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .contact a {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
 }
