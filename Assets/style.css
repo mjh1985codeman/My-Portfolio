@@ -13,13 +13,12 @@ body {
     color: darkslategray;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 h2 {
-    padding-left: 20px;
+   
     font-style: italic;
-    margin: 20px;
     font-size: 30px;
     border-bottom: gray 1px solid;
 }
@@ -66,11 +65,11 @@ header a {
 
 /* navigation stylings */
 
-nav {
+/* nav {
     margin-left: auto;
-}
+} */
 
-nav ul {
+/* nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,9 +88,14 @@ nav a {
 nav ul li a:hover  {
     opacity: 0.5;
     border-bottom: 2px dotted white;
-} 
+}  */
 
 /* About Me Section Styling */
+
+.other-projects {
+    min-width: 400px;
+    height: 300px;
+}
 
 .about {
     display: flex;
@@ -128,7 +132,7 @@ nav ul li a:hover  {
 
 /* Image Behavior */
 
-.work img:hover{
+img:hover{
     opacity: 0.7;    
 }
 
